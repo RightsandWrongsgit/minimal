@@ -23,7 +23,17 @@
 
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
-        <p><small>HOME PAGE; <a href="{{index.md | relative_url}}"></a></small></p>        
+        		<!-- webpage tabs -->
+			<nav>
+	    		<ul>
+	        		<li><a href="/">Home</a></li>
+		        	<li><a href="/about">About</a></li>
+					<li><a href="/projects">Projects</a></li>
+	        		<li><a href="https://trencyclopedia.github.io/mydocs/" target="_blank">MyDocs文档</a></li>
+				<li><a href="https://trencyclopedia.github.io/posts/" target="_blank">Posts</a></li>
+					<li><a href="/blog">Blogs</a></li>
+	    		</ul>
+			</nav>        
  
         <!--      {% if site.github.is_project_page %}
         <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
